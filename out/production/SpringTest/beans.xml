@@ -5,8 +5,9 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id = "helloWorld" class = "com.firstTest.HelloWorld">
-        <property name = "message" value = "Hello Aaron!"/>
+    <bean id = "helloWorld" class = "com.firstTest.HelloWorld" init-method = "init"
+          destroy-method = "destroy">
+        <property name = "message" value = "Hello World!"/>
     </bean>
 
 </beans>
